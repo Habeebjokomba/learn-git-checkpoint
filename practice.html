@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Project 1</title>
+</head>
+<body>
+    <!--Create the navbar: home, about, work, resume, contact-->
+    <nav> 
+        <p>Home</p>
+        <p>About</p>  
+        <p>Work</p> 
+        <p>Resume</p>     
+        <p>Contact</p>  
+    </nav>
+    
+   
+    <form action="submit" method="post" enctype="multipart/form-data">
+        <!--Home-->
+        <fieldset>
+            <legend>Home</legend>
+            <label for="fullname">Full name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Jane Doe" required>
+            <br>
+            <label for="headline">Headline:</label>
+            <input type="text" id="headline" name="headline" placeholder="Web Developer">
+        </fieldset>
+
+        <!--About-->
+        <fieldset>
+            <legend>About</legend>
+            <label for="bio">About me:</label>
+            <br>
+            <textarea id="bio" name="bio" rows="5" cols="40" placeholder="Tell us about yourself"></textarea>
+        </fieldset>
+
+        <!--Work-->
+        <fieldset>
+            <legend>Work</legend>
+            <label for="job-title">Job title:</label>
+            <input type="text" id="job-title" name="job_title">
+            <br>
+            <label for="company">Company:</label>
+            <input type="text" id="company" name="company">
+            <br>
+            <label for="years">Years of experience:</label>
+            <input type="number" id="years" name="years" min="0" max="50">
+            <br>
+            <label for="portfolio">Portfolio link:</label>
+            <input type="url" id="portfolio" name="portfolio" placeholder="https://">
+        </fieldset>
+
+        <!--Resume-->
+        <fieldset>
+            <legend>Resume</legend>
+            <label for="resume">Upload resume:</label>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+        </fieldset>
+
+        <!--Contact-->
+        <fieldset>
+            <legend>Contact</legend>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone">
+            <br>
+            <label for="message">Message:</label>
+            <br>
+            <textarea id="message" name="message" rows="4" cols="40"></textarea>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
